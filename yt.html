@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<style>html,body{margin:0;height:100%;background:#000;overflow:hidden}iframe{border:0;width:100%;height:100%}</style>
+</head>
+<body>
+<iframe id="yt" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+<script>
+const id = new URLSearchParams(location.search).get('v');
+document.getElementById('yt').src =
+  'https://www.youtube.com/embed/' + id + '?autoplay=1&controls=0&rel=0';
+</script>
+</body>
+</html>
